@@ -12,13 +12,13 @@ public class AdditionalQuest {
         int temp;
 
         for (i = 100; i >= 0; i = i - 6, time++) {
-            if(month == time) {
+            if (month == time) {
                 break;
             }
             temp = i * 100;
             price = price + temp;
         }
-        if(i <= 0) {
+        if (i <= 0) {
             System.out.println("Гречка закончилась");
         }
         System.out.println("На хранение гречки уйдет = " + price + "руб");
