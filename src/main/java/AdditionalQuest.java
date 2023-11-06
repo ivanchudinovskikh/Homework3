@@ -11,14 +11,14 @@ public class AdditionalQuest {
         int price = 0;
         int temp;
 
-        for (i = 100; i >= 0; i = i - 6, time++) {
+        for (i = 6; i <= 100; i = i + 6, time++) {
             if (month == time) {
                 break;
             }
             temp = i * 100;
             price = price + temp;
         }
-        if (i <= 0) {
+        if (i >= 100) {
             System.out.println("Гречка закончилась");
         }
         System.out.println("На хранение гречки уйдет = " + price + "руб");

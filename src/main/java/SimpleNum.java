@@ -16,10 +16,12 @@ public class SimpleNum {
                 break;
             }
         }
-        if (check) {
-            System.out.println("Простое число");
-        } else {
-            System.out.println("Составное число");
+        if (num == 1 | num == 0) {
+            System.out.println("Ни составное и не простое");
         }
+        else if (check) {
+            System.out.println("Простое число");
+        }
+        else System.out.println("Составное число");
     }
 }
